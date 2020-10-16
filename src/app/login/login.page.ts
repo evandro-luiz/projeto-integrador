@@ -40,6 +40,7 @@ formGroup : FormGroup;
       }).catch(data=>{
         //erro
         load.dismiss();//encerrando mensagem
+        this.template.myAlert("Erro ao atenticar");
       })
 
 
