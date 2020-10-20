@@ -13,6 +13,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment'; 
 import { ClienteService } from './services/cliente.service';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -23,13 +24,13 @@ import { ClienteService } from './services/cliente.service';
     AngularFireModule.initializeApp(environment.firebase),
     HttpClientModule,
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
     ],
   providers: [
     StatusBar,
     SplashScreen,
-    
     ClienteService,
+    
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

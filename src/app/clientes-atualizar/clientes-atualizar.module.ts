@@ -4,18 +4,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ClientesNovoPageRoutingModule } from './clientes-novo-routing.module';
+import { ClientesAtualizarPageRoutingModule } from './clientes-atualizar-routing.module';
 
-import { ClientesNovoPage } from './clientes-novo.page';
+import { ClientesAtualizarPage } from './clientes-atualizar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
     ReactiveFormsModule,
-    ClientesNovoPageRoutingModule
+    IonicModule,
+    ClientesAtualizarPageRoutingModule
   ],
-  declarations: [ClientesNovoPage]
+  declarations: [ClientesAtualizarPage]
 })
-export class ClientesNovoPageModule {}
+export class ClientesAtualizarPageModule {}
